@@ -10,9 +10,9 @@ fill_ram:
   mov $0x00, %AL
   loop_increment:
     add %BL, %AL
-    decq %BL
+    dec %BL
     jne loop_increment:
-  mov %BL, ram+0x50
+  mov %AL, ram+0x50
   ret
 
   .section .note.GNU-stack,"",@progbits
