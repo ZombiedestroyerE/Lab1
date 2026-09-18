@@ -4,6 +4,7 @@ PRINT_HELLO
   gcc -nostdlib -no-pie print_hello.s -o hello
   Run
   ./hello
+  \n
 TASK1
   gcc -no-pie task1.s print_ram.c -o task1
   ./task1
