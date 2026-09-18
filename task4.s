@@ -11,7 +11,7 @@ fill_ram:
   loop_increment:
     add %BL, %AL
     dec %BL
-    jne loop_increment:
+    jne loop_increment
   mov %AL, ram+0x50
   ret
 
